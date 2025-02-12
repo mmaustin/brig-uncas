@@ -1,13 +1,14 @@
 //import Image from "next/image";
 //import manifest from '@/assets/manifest-1.png';
-//import { Accordion } from "@/components/ui/accordion";
+
+
 
 
 export default function Home() {
   return (
     <section className="h-screen w-full my-8 flex justify-center items-center">
-      <div className="bg-[url(@/assets/manifest-1.png)] bg-cover bg-center h-full w-full m-8">
-        
+      <div className="bg-[url(@/assets/manifest-1.png)] bg-cover bg-center h-full w-full m-8 flex justify-center items-center">
+            
         {/* <Image
           className="object-cover"
           src={manifest}
