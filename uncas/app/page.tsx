@@ -1,21 +1,43 @@
-//import Image from "next/image";
-//import manifest from '@/assets/manifest-1.png';
+import Image from "next/image";
+import manifest from '@/assets/manifest-8.png';
+import {
+  Carousel,
+  CarouselContent,
+  CarouselItem,
+  CarouselNext,
+  CarouselPrevious,
+} from "@/components/ui/carousel"
 
 
 
 
 export default function Home() {
   return (
-    <section className="h-screen w-full my-8 flex justify-center items-center">
-      <div className="bg-[url(@/assets/manifest-1.png)] bg-cover bg-center h-full w-full m-8 flex justify-center items-center">
-            
-        {/* <Image
-          className="object-cover"
+    <div className="flex flex-col justify-center items-center">
+      <section className="h-screen w-full my-8 flex justify-center items-center">
+        <div className="bg-[url(@/assets/manifest-8.png)] bg-cover bg-center h-3/4 w-3/4 m-8 flex justify-center items-center">
+          <Carousel className="bg-chart-4/30 w-52">
+            <CarouselContent>
+              <CarouselItem className="capitalize font-serif">in rememberance of Name who never got a chance to shine</CarouselItem>
+              <CarouselItem>Item Two</CarouselItem>
+              <CarouselItem>Item Three</CarouselItem>
+            </CarouselContent>
+            <CarouselPrevious />
+            <CarouselNext />
+          </Carousel>
+        </div>
+      </section>
+      <div className="mt-10">
+        <Image
+          className="h-[275px] w-[275px]"
           src={manifest}
-          alt="manifest page 1"
-        /> */}
+          alt="create author profile form"
+          priority
+          height={265}
+          width={198}
+        />
       </div>
-    </section>
+    </div>
   );
 };
 
