@@ -26,6 +26,8 @@ const displayArray = [
 export default function Home() {
 
   const [num, setNum] = useState(0);
+  console.log(num);
+  
 
   return (
     <div className="flex flex-col justify-center items-center">
@@ -33,7 +35,9 @@ export default function Home() {
         <div className="bg-[url(@/assets/manifest-8.png)] bg-cover bg-center h-3/4 w-3/4 m-8 flex justify-center items-center">
           <Carousel className="bg-chart-4/30 w-52">
             <CarouselContent>
-              
+              {testArray.map((person, i) => {
+                return <CarouselItem key={i}>{person}</CarouselItem>
+              })}
               {/* <CarouselItem className="capitalize font-serif">in rememberance of Name who never got a chance to shine</CarouselItem>
               <CarouselItem>Item Two</CarouselItem>
               <CarouselItem>Item Three</CarouselItem> */}
