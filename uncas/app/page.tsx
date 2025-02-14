@@ -9,13 +9,13 @@ import {
   CarouselNext,
   CarouselPrevious,
 } from "@/components/ui/carousel";
-import ShowCarousel, { ShowDisplay } from "@/components/display/ShowCarousel";
+import ShowCarousel from "@/components/display/ShowCarousel";
 //import { useState } from "react";
 
 const testArray = [
-  'person one',
-  'person two',
-  'person three'
+  {name: 'Eliza Smith', age: 19, feet: 5, inches: 10, colour: 'Black'},
+  {name: 'Eliza Smith', age: 19, feet: 5, inches: 10, colour: 'Black'},
+  {name: 'Eliza Smith', age: 19, feet: 5, inches: 10, colour: 'Black'},
 ];
 
 export default function Home() { 
@@ -23,25 +23,18 @@ export default function Home() {
   // const [num, setNum] = useState(0);
   // console.log(num);
   
-  const changeState = () => {
-    console.log('apple');
-    
-    // if(num !== testArray.length-1){
-    //   setNum(num + 1);
-    // }
-  }
 
-  let displayIndex = 0;
+
+
 
   return (
-    <div className="flex flex-col justify-center items-center">
+    <div className="flex flex-col justify-center items-center bg-[url(@/assets/manifest-8.png)] bg-cover bg-center mt-8">
       <section className="h-screen w-full my-8 flex justify-center items-center">
-        <div className="bg-[url(@/assets/manifest-8.png)] bg-cover bg-center h-full w-full flex justify-center items-center">
+        <div className=" h-full w-full flex justify-center items-center">
           <Carousel className=" w-52">
             <CarouselContent>
               {testArray.map((person, i) => {
-                displayIndex = i;
-                return <CarouselItem key={i} className="capitalize font-serif italic text-white opacity-45"><ShowCarousel arrIndex={i}/></CarouselItem>
+                return <CarouselItem key={i} className="capitalize font-serif italic text-lg font-bold opacity"><ShowCarousel captive={person}/></CarouselItem>
               })}
               {/* <CarouselItem className="capitalize font-serif">in rememberance of Name who never got a chance to shine</CarouselItem>
               <CarouselItem>Item Two</CarouselItem>
