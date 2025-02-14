@@ -1,3 +1,5 @@
+'use client';
+
 import Image from "next/image";
 import manifest from '@/assets/manifest-8.png';
 import {
@@ -6,21 +8,35 @@ import {
   CarouselItem,
   CarouselNext,
   CarouselPrevious,
-} from "@/components/ui/carousel"
+} from "@/components/ui/carousel";
+import { useState } from "react";
 
+const testArray = [
+  'person one',
+  'person two',
+  'person three'
+];
 
-//Why is pushing to github taking so long!!!!
+const displayArray = [
+  'text for persone one',
+  'text for persone one',
+  'text for persone one'
+]
 
 export default function Home() {
+
+  const [num, setNum] = useState(0);
+
   return (
     <div className="flex flex-col justify-center items-center">
       <section className="h-screen w-full my-8 flex justify-center items-center">
         <div className="bg-[url(@/assets/manifest-8.png)] bg-cover bg-center h-3/4 w-3/4 m-8 flex justify-center items-center">
           <Carousel className="bg-chart-4/30 w-52">
             <CarouselContent>
-              <CarouselItem className="capitalize font-serif">in rememberance of Name who never got a chance to shine</CarouselItem>
+              
+              {/* <CarouselItem className="capitalize font-serif">in rememberance of Name who never got a chance to shine</CarouselItem>
               <CarouselItem>Item Two</CarouselItem>
-              <CarouselItem>Item Three</CarouselItem>
+              <CarouselItem>Item Three</CarouselItem> */}
             </CarouselContent>
             <CarouselPrevious />
             <CarouselNext />
