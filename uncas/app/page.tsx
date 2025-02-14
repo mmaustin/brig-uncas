@@ -11,23 +11,17 @@ import {
 } from "@/components/ui/carousel";
 import { useState } from "react";
 
+
 const testArray = [
   'person one',
   'person two',
   'person three'
 ];
 
-const displayArray = [
-  'text for persone one',
-  'text for persone one',
-  'text for persone one'
-]
-
 export default function Home() {
 
   const [num, setNum] = useState(0);
-  console.log(num);
-  
+  console.log(num);  
 
   return (
     <div className="flex flex-col justify-center items-center">
