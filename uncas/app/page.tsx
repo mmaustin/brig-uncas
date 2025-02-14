@@ -13,9 +13,9 @@ import ShowCarousel from "@/components/display/ShowCarousel";
 //import { useState } from "react";
 
 const testArray = [
-  {name: 'Eliza Smith', age: 19, feet: 5, inches: 10, colour: 'Black'},
-  {name: 'Eliza Smith', age: 19, feet: 5, inches: 10, colour: 'Black'},
-  {name: 'Eliza Smith', age: 19, feet: 5, inches: 10, colour: 'Black'},
+  {name: 'Eliza Smith', age: 19, feet: '5\'', inches: '10"', colour: 'Black'},
+  {name: 'Clowey Ann', age: '9 months', feet: '2\'', inches: '10"', colour: 'Copper'},
+  {name: 'Solloman Harriss', age: 20, feet: '5\'', inches: '2"', colour: 'Yellow'},
 ];
 
 export default function Home() { 
