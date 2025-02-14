@@ -14,10 +14,11 @@ const testArray = [
 //   'text for persone one'
 // ];
 
-const ShowCarousel = ({arrIndex}: number = 0) => {
+
+const ShowCarousel = ({arrIndex}: {arrIndex: number}) => {
   return (
     <div>{testArray[arrIndex]}</div>
   )
 }
-export default ShowCarousel
+export default ShowCarousel;
 

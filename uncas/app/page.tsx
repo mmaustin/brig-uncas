@@ -1,7 +1,7 @@
 'use client';
 
-import Image from "next/image";
-import manifest from '@/assets/manifest-8.png';
+// import Image from "next/image";
+// import manifest from '@/assets/manifest-8.png';
 import {
   Carousel,
   CarouselContent,
@@ -9,8 +9,7 @@ import {
   CarouselNext,
   CarouselPrevious,
 } from "@/components/ui/carousel";
-import { useState } from "react";
-
+import ShowCarousel from "@/components/display/ShowCarousel";
 
 const testArray = [
   'person one',
@@ -18,10 +17,7 @@ const testArray = [
   'person three'
 ];
 
-export default function Home() {
-
-  const [num, setNum] = useState(0);
-  console.log(num);  
+export default function Home() { 
 
   return (
     <div className="flex flex-col justify-center items-center">
@@ -30,7 +26,7 @@ export default function Home() {
           <Carousel className="bg-chart-4/30 w-52">
             <CarouselContent>
               {testArray.map((person, i) => {
-                return <CarouselItem key={i}>{person}</CarouselItem>
+                return <CarouselItem key={i}><ShowCarousel arrIndex={i}/></CarouselItem>
               })}
               {/* <CarouselItem className="capitalize font-serif">in rememberance of Name who never got a chance to shine</CarouselItem>
               <CarouselItem>Item Two</CarouselItem>
@@ -42,14 +38,14 @@ export default function Home() {
         </div>
       </section>
       <div className="mt-10">
-        <Image
+        {/* <Image
           className="h-[275px] w-[275px]"
           src={manifest}
           alt="create author profile form"
           priority
           height={265}
           width={198}
-        />
+        /> */}
       </div>
     </div>
   );
