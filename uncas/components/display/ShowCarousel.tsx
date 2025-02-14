@@ -1,6 +1,6 @@
-'use client';
 
-//import { useState, useEffect } from "react";
+
+//import { useEffect } from "react";
 
 const testArray = [
   'person one',
@@ -8,17 +8,38 @@ const testArray = [
   'person three'
 ];
 
-// const displayArray = [
-//   'text for persone one',
-//   'text for persone one',
-//   'text for persone one'
-// ];
+const displayArray = [
+  'text for person one',
+  'text for person one',
+  'text for person one'
+];
 
+const setAllTypesOfThangs = (i: number):number => {
+  
+  // const [num, setNum] = useState(i);
+  // useEffect(() => {
+  //   setNum(i);
+    return i
+  // }, [i])
+};
+
+let vari = 0
 
 const ShowCarousel = ({arrIndex}: {arrIndex: number}) => {
+  // useEffect(() => {
+    vari = setAllTypesOfThangs(arrIndex);
+    
+  // }, [arrIndex]);
+
   return (
     <div>{testArray[arrIndex]}</div>
   )
 }
 export default ShowCarousel;
+
+export const ShowDisplay = () => {
+  return (
+    <div className="">{displayArray[vari]}</div>
+  )
+};
 

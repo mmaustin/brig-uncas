@@ -9,7 +9,8 @@ import {
   CarouselNext,
   CarouselPrevious,
 } from "@/components/ui/carousel";
-import ShowCarousel from "@/components/display/ShowCarousel";
+import ShowCarousel, { ShowDisplay } from "@/components/display/ShowCarousel";
+//import { useState } from "react";
 
 const testArray = [
   'person one',
@@ -19,34 +20,49 @@ const testArray = [
 
 export default function Home() { 
 
+  // const [num, setNum] = useState(0);
+  // console.log(num);
+  
+  const changeState = () => {
+    console.log('apple');
+    
+    // if(num !== testArray.length-1){
+    //   setNum(num + 1);
+    // }
+  }
+
+  let displayIndex = 0;
+
   return (
     <div className="flex flex-col justify-center items-center">
       <section className="h-screen w-full my-8 flex justify-center items-center">
-        <div className="bg-[url(@/assets/manifest-8.png)] bg-cover bg-center h-3/4 w-3/4 m-8 flex justify-center items-center">
-          <Carousel className="bg-chart-4/30 w-52">
+        <div className="bg-[url(@/assets/manifest-8.png)] bg-cover bg-center h-full w-full flex justify-center items-center">
+          <Carousel className=" w-52">
             <CarouselContent>
               {testArray.map((person, i) => {
-                return <CarouselItem key={i}><ShowCarousel arrIndex={i}/></CarouselItem>
+                displayIndex = i;
+                return <CarouselItem key={i} className="capitalize font-serif italic text-white opacity-45"><ShowCarousel arrIndex={i}/></CarouselItem>
               })}
               {/* <CarouselItem className="capitalize font-serif">in rememberance of Name who never got a chance to shine</CarouselItem>
               <CarouselItem>Item Two</CarouselItem>
               <CarouselItem>Item Three</CarouselItem> */}
             </CarouselContent>
-            <CarouselPrevious />
-            <CarouselNext />
+            <CarouselPrevious className="opacity-30"/>
+            <CarouselNext className="opacity-30"/>
           </Carousel>
         </div>
       </section>
-      <div className="mt-10">
-        {/* <Image
+      {/* <div className="mt-10">
+        <ShowDisplay />
+        <Image
           className="h-[275px] w-[275px]"
           src={manifest}
           alt="create author profile form"
           priority
           height={265}
           width={198}
-        /> */}
-      </div>
+        />
+      </div> */}
     </div>
   );
 };
