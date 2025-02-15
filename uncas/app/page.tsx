@@ -10,13 +10,13 @@ import {
   CarouselPrevious,
 } from "@/components/ui/carousel";
 import ShowCarousel from "@/components/display/ShowCarousel";
-//import { useState } from "react";
+import { transportedHumans } from "@/constants/captiveArray";
 
-const testArray = [
-  {name: 'Eliza Smith', age: 19, feet: '5\'', inches: '10"', colour: 'Black'},
-  {name: 'Clowey Ann', age: '9 months', feet: '2\'', inches: '10"', colour: 'Copper'},
-  {name: 'Solloman Harriss', age: 20, feet: '5\'', inches: '2"', colour: 'Yellow'},
-];
+// const testArray = [
+//   {name: 'Eliza Smith', age: 19, feet: '5\'', inches: '10"', colour: 'Black'},
+//   {name: 'Clowey Ann', age: '9 months', feet: '2\'', inches: '10"', colour: 'Copper'},
+//   {name: 'Solloman Harriss', age: 20, feet: '5\'', inches: '2"', colour: 'Yellow'},
+// ];
 
 export default function Home() { 
 
@@ -33,7 +33,7 @@ export default function Home() {
         {/* <div className=" h-full w-full flex justify-center items-center border border-fuchsia-600"> */}
           <Carousel className="w-52">
             <CarouselContent>
-              {testArray.map((person, i) => {
+              {transportedHumans.map((person, i) => {
                 return <CarouselItem key={i} className="capitalize font-serif italic text-lg font-bold opacity"><ShowCarousel captive={person}/></CarouselItem>
               })}
             </CarouselContent>
