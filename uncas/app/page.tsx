@@ -29,21 +29,18 @@ export default function Home() {
 
   return (
     <div className="flex flex-col justify-center items-center bg-[url(@/assets/manifest-8.png)] bg-cover bg-center mt-8">
-      <section className="h-screen w-full my-8 flex justify-center items-center">
-        <div className=" h-full w-full flex justify-center items-center">
-          <Carousel className=" w-52">
+      <section className="h-screen w-screen my-8 flex justify-center items-center">
+        {/* <div className=" h-full w-full flex justify-center items-center border border-fuchsia-600"> */}
+          <Carousel className="w-52">
             <CarouselContent>
               {testArray.map((person, i) => {
                 return <CarouselItem key={i} className="capitalize font-serif italic text-lg font-bold opacity"><ShowCarousel captive={person}/></CarouselItem>
               })}
-              {/* <CarouselItem className="capitalize font-serif">in rememberance of Name who never got a chance to shine</CarouselItem>
-              <CarouselItem>Item Two</CarouselItem>
-              <CarouselItem>Item Three</CarouselItem> */}
             </CarouselContent>
             <CarouselPrevious className="opacity-30"/>
             <CarouselNext className="opacity-30"/>
           </Carousel>
-        </div>
+        {/* </div> */}
       </section>
       {/* <div className="mt-10">
         <ShowDisplay />
