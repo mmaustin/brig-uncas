@@ -8,7 +8,7 @@ const ManifestFrontRight = () => {
       <Image
         className="h-[375px] w-[375px]"
         src={manifest}
-        alt="Manifest Front Left"
+        alt="Manifest Front Right"
         priority
         height={265}
         width={198}
