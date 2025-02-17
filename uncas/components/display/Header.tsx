@@ -1,4 +1,4 @@
-//import MobileNav from "./MobileNav";
+import MobileNav from "./MobileNav";
 import Navbar from "./Navbar";
 
 const Header = () => {
@@ -7,9 +7,8 @@ const Header = () => {
       <div className="container hidden md:flex items-center gap-8 rounded-full">
         <Navbar />
       </div>
-      <div className="md:hidden mt-6 md:mt-0 w-full">
-        Show This When Mobile Size
-        {/* <MobileNav /> */}
+      <div className="md:hidden mt-6 md:mt-0 w-40">
+        <MobileNav />
       </div>
     </header>
   )
