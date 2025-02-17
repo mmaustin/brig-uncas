@@ -5,7 +5,7 @@ import manifestA from '@/assets/manifest-5.png';
 
 const ManifestBackRight = () => {
   return (
-    <div className="h-full w-full flex flex-col justify-center items-center border">
+    <div className="h-full w-full flex flex-col justify-center items-center">
       <Image
         className="h-[275px] w-[475px]"
         src={manifest}

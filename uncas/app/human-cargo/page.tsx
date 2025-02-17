@@ -26,28 +26,8 @@ const HumanCargo = () => {
           </Carousel>
         {/* </div> */}
       </section>
-      {/* <div className="mt-10">
-        <ShowDisplay />
-        <Image
-          className="h-[275px] w-[275px]"
-          src={manifest}
-          alt="create author profile form"
-          priority
-          height={265}
-          width={198}
-        />
-      </div> */}
     </div>
   )
 }
 export default HumanCargo;
 
-
-//  <Image
-//           className="h-[200px] w-[300px] object-contain border border-base-300/50 hover:border-neutral-800 rounded-lg"
-//           src={profileForm}
-//           alt="create author profile form"
-//           priority
-//           height={265}
-//           width={198}
-//         />

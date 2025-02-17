@@ -4,7 +4,7 @@ import manifest from '@/assets/manifest-2.png';
 
 const ManifestFrontLeft = () => {
   return (
-    <div className="h-screen w-full flex flex-col justify-center items-center border">
+    <div className="h-screen w-full flex flex-col justify-center items-center">
       <Image
         className="h-[375px] w-[375px]"
         src={manifest}
