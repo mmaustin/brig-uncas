@@ -15,7 +15,7 @@ const EnslavedHumans = () => {
     <div className="flex flex-col justify-center items-center bg-[url(@/assets/manifest-8.png)] bg-cover bg-center mt-8">
       <section className="h-screen w-screen my-8 flex justify-center items-center">
         {/* <div className=" h-full w-full flex justify-center items-center border border-fuchsia-600"> */}
-          <Carousel className="w-52">
+          <Carousel className="mt-4 w-52">
             <CarouselContent>
               {transportedHumans.map((person, i) => {
                 return <CarouselItem key={i} className="capitalize font-serif italic text-lg font-bold opacity"><ShowCarousel captive={person}/></CarouselItem>
