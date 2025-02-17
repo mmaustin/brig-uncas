@@ -10,7 +10,7 @@ import {
 } from "@/components/ui/carousel";
 import { transportedHumans } from "@/constants/captiveArray";
 
-const EnslavedHumans = () => {
+const HumanCargo = () => {
   return (
     <div className="flex flex-col justify-center items-center bg-[url(@/assets/manifest-8.png)] bg-cover bg-center mt-8">
       <section className="h-screen w-screen my-8 flex justify-center items-center">
@@ -40,7 +40,7 @@ const EnslavedHumans = () => {
     </div>
   )
 }
-export default EnslavedHumans;
+export default HumanCargo;
 
 
 //  <Image

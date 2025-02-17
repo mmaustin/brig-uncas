@@ -93,3 +93,26 @@ export const transportedHumans = [
   {name: 'James Bauery', age: 22, feet: '5\'', inches: '8 3/4"', colour: 'Black'},
 ];
 
+
+export const links = [
+  {
+    name: "human cargo",
+    path: '/human-cargo'
+  },
+  {
+    name: "Manifest Front-Left",
+    path: '/manifest-front-L'
+  },
+  {
+    name: "Manifest Front-Right",
+    path: '/manifest-front-R'
+  },
+  {
+    name: "Manifest Back-Left",
+    path: '/manifest-back-L'
+  },
+  {
+    name: "Manifest Back-Right",
+    path: '/manifest-back-R'
+  }
+];
