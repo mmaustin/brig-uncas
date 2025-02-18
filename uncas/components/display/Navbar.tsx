@@ -25,6 +25,9 @@ const Navbar = () => {
           )
         })}
       </nav>
+        {/* {pathName === '/human-cargo' && 
+          <div className="h-8 w-full border">Number Name Age Feet Inches Colour</div>
+        } */}
     </div>
   )
 }
