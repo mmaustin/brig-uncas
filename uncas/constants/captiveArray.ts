@@ -96,7 +96,7 @@ export const transportedHumans = [
 
 export const links = [
   {
-    name: "human cargo",
+    name: "Human Cargo",
     path: '/human-cargo'
   },
   {
