@@ -7,7 +7,7 @@ const ManifestBackRight = () => {
   return (
     <div className="h-full w-full flex flex-col justify-center items-center">
       <Image
-        className="h-[275px] w-[475px]"
+        className="h-[175px] w-[275px]"
         src={manifest}
         alt="Manifest Back Left"
         priority
@@ -15,7 +15,7 @@ const ManifestBackRight = () => {
         width={198}
       />
       <Image
-        className="h-[275px] w-[375px] mt-8"
+        className="h-[275px] w-[375px] mt-2"
         src={manifestA}
         alt="Manifest Back Left"
         priority
