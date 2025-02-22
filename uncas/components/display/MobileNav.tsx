@@ -11,6 +11,7 @@ import {
   DropdownMenuSeparator,
   DropdownMenuTrigger,
 } from "@/components/ui/dropdown-menu";
+//import { cn } from "@/lib/utils";
 
 
 const MobileNav = () => {
@@ -34,12 +35,14 @@ const MobileNav = () => {
         </AccordionItem>
       </Accordion> */}
       <DropdownMenu>
-        <DropdownMenuTrigger>Open</DropdownMenuTrigger>
+        <DropdownMenuTrigger >Open</DropdownMenuTrigger>
         <DropdownMenuContent>
           <DropdownMenuLabel>Routes</DropdownMenuLabel>
           <DropdownMenuSeparator />
+          {/* <DropdownMenuItem><Link href="/manifest-front-L" >F</Link></DropdownMenuItem>
+          <DropdownMenuItem><Link href="/manifest-back-L" >B</Link></DropdownMenuItem> */}
           {links.map((link, i) => {
-            return <DropdownMenuItem key={link.name}>
+            return <DropdownMenuItem key={link.name} asChild>
               <Link key={i} href={`${link.path}`} className={`${link.path === pathName && "text-xs no-underline font-extrabold font-serif"} text-xs text font-light font-serif`}>{link.name}</Link>
             </DropdownMenuItem>
           })}
