@@ -7,7 +7,7 @@ const ManifestBackLeft = () => {
   return (
     <div className="h-full w-full flex flex-col justify-center items-center">
       <Image
-        className="sm:h-[250px] sm:w-[400px] md:h-[375px] md:w-[575px]"
+        className="h-[200px] w-[275px] sm:h-[250px] sm:w-[400px] md:h-[375px] md:w-[575px]"
         src={manifest}
         alt="Manifest Back Left"
         priority
