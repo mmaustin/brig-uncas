@@ -1,16 +1,25 @@
 'use client'
-import { links } from "@/constants/captiveArray";
-import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "../ui/accordion";
-import Link from "next/link";
-import { usePathname } from "next/navigation";
+//import { links } from "@/constants/captiveArray";
+//import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "../ui/accordion";
+//import Link from "next/link";
+//import { usePathname } from "next/navigation";
+import {
+  DropdownMenu,
+  DropdownMenuContent,
+  DropdownMenuItem,
+  DropdownMenuLabel,
+  DropdownMenuSeparator,
+  DropdownMenuTrigger,
+} from "@/components/ui/dropdown-menu";
+
 
 const MobileNav = () => {
 
-  const pathName = usePathname();
+  //const pathName = usePathname();
 
   return (
-    <nav className="h-auto w-[275px]">
-      <Accordion type="single" collapsible className="w-full">
+    <nav className="border">
+      {/* <Accordion type="single" collapsible className="w-full">
         <AccordionItem value="item-1">
           <AccordionTrigger className="">Page Links</AccordionTrigger>
           <AccordionContent >
@@ -23,7 +32,19 @@ const MobileNav = () => {
             </div>
           </AccordionContent>
         </AccordionItem>
-      </Accordion>
+      </Accordion> */}
+      <DropdownMenu>
+        <DropdownMenuTrigger>Open</DropdownMenuTrigger>
+        <DropdownMenuContent>
+          <DropdownMenuLabel>Routes</DropdownMenuLabel>
+          <DropdownMenuSeparator />
+          <DropdownMenuItem>Profile</DropdownMenuItem>
+          <DropdownMenuItem>Billing</DropdownMenuItem>
+          <DropdownMenuItem>Team</DropdownMenuItem>
+          <DropdownMenuItem>Subscription</DropdownMenuItem>
+        </DropdownMenuContent>
+      </DropdownMenu>
+
     </nav>
   )
 }
