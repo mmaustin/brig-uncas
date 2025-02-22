@@ -1,8 +1,8 @@
 'use client'
-//import { links } from "@/constants/captiveArray";
+import { links } from "@/constants/captiveArray";
 //import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "../ui/accordion";
-//import Link from "next/link";
-//import { usePathname } from "next/navigation";
+import Link from "next/link";
+import { usePathname } from "next/navigation";
 import {
   DropdownMenu,
   DropdownMenuContent,
@@ -15,7 +15,7 @@ import {
 
 const MobileNav = () => {
 
-  //const pathName = usePathname();
+  const pathName = usePathname();
 
   return (
     <nav className="border">
@@ -38,10 +38,15 @@ const MobileNav = () => {
         <DropdownMenuContent>
           <DropdownMenuLabel>Routes</DropdownMenuLabel>
           <DropdownMenuSeparator />
-          <DropdownMenuItem>Profile</DropdownMenuItem>
+          {links.map((link, i) => {
+            return <DropdownMenuItem key={link.name}>
+              <Link key={i} href={`${link.path}`} className={`${link.path === pathName && "text-xs no-underline font-extrabold font-serif"} text-xs text font-light font-serif`}>{link.name}</Link>
+            </DropdownMenuItem>
+          })}
+          {/* <DropdownMenuItem>Profile</DropdownMenuItem>
           <DropdownMenuItem>Billing</DropdownMenuItem>
           <DropdownMenuItem>Team</DropdownMenuItem>
-          <DropdownMenuItem>Subscription</DropdownMenuItem>
+          <DropdownMenuItem>Subscription</DropdownMenuItem> */}
         </DropdownMenuContent>
       </DropdownMenu>
 
