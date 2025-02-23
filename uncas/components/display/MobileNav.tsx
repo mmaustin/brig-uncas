@@ -10,6 +10,8 @@ import {
   DropdownMenuSeparator,
   DropdownMenuTrigger,
 } from "@/components/ui/dropdown-menu";
+import { RiMenu5Fill } from "react-icons/ri";
+import { Button } from "../ui/button";
 
 
 const MobileNav = () => {
@@ -23,7 +25,11 @@ const MobileNav = () => {
       </h1>
       <div className="">
         <DropdownMenu>
-          <DropdownMenuTrigger className="text-xs font-extrabold font-serif">Navigate</DropdownMenuTrigger>
+          <DropdownMenuTrigger className="text-xs font-extrabold font-serif" asChild>
+            <Button variant={'default'} size={'icon'}>
+              <RiMenu5Fill />
+            </Button>
+          </DropdownMenuTrigger>
           <DropdownMenuContent>
             <DropdownMenuLabel className="text-sm font-serif">Pages</DropdownMenuLabel>
             <DropdownMenuSeparator />
