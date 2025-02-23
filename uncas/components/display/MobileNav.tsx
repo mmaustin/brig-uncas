@@ -17,7 +17,12 @@ const MobileNav = () => {
   const pathName = usePathname();
 
   return (
-    <nav className="border">
+    <nav className="border flex justify-between items center">
+      <div className="">
+        <h1 className="">
+          <Link href={'/'} className="text-2xl font-extrabold font-serif uppercase" >Brig Uncas</Link>
+        </h1>
+      </div>
       <DropdownMenu>
         <DropdownMenuTrigger >Open</DropdownMenuTrigger>
         <DropdownMenuContent>
@@ -30,7 +35,6 @@ const MobileNav = () => {
           })}
         </DropdownMenuContent>
       </DropdownMenu>
-
     </nav>
   )
 }
