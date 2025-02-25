@@ -1,11 +1,13 @@
+'use client'
+
 import { agesArray } from '@/constants/captiveArray';
 import { PieChart, Pie, Tooltip, ResponsiveContainer } from 'recharts';
 
 
 const AgesChart = () => {
   return (
-    <ResponsiveContainer width="100%" height="100%">
-      <PieChart width={400} height={400}>
+    <ResponsiveContainer width='100%' height={300}>
+      <PieChart width={400} height={400} >
         <Pie
           dataKey="value"
           isAnimationActive={false}
