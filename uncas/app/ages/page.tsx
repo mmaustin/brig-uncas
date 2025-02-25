@@ -1,9 +1,10 @@
-
-
+import AgesChart from "@/components/display/AgesChart";
 
 const AgesContainer = () => {
   return (
-    <div>CaptivesAges</div>
+    <div className="flex justify-center items-center">
+      <AgesChart />
+    </div>
   )
 }
 export default AgesContainer;
