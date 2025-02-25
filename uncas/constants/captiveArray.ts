@@ -6,6 +6,23 @@
 //26-30: 9
 //31-35: 1
 //36-40: 1
+
+type AgesType = {
+  name: string,
+  value: number,
+}
+
+export const agesArray: AgesType[] = [
+  {name: '0-5', value: 8},
+  {name: '6-10', value: 4},
+  {name: '11-15', value: 16},
+  {name: '16-20', value: 35},
+  {name: '21-25', value: 18},
+  {name: '26-30', value: 9},
+  {name: '31-35', value: 1},
+  {name: '36-40', value: 1},
+]
+
 export const transportedHumans = [
   {name: 'Clawey Ford & 4 children', age: 30, feet: '5', inches: '5"', colour: 'Copper'},
   {name: 'John D.', age: 7, feet: '4\'', inches: '..', colour: 'Copper'},
@@ -101,41 +118,41 @@ export const transportedHumans = [
   {name: 'James Bauery', age: 22, feet: '5\'', inches: '8 3/4"', colour: 'Black'},
 ];
 
-type CA = {
-  one: number,
-  two: number,
-  three: number,
-  four: number,
-  five: number,
-  six: number,
-  seven: number,
-  eight: number
-}
-const countAges = ():CA =>{
-  const ca: CA = {
-    one: 0,
-  two: 0,
-  three: 0,
-  four: 0,
-  five: 0,
-  six: 0,
-  seven: 0,
-  eight: 0
-  };
+// type CA = {
+//   one: number,
+//   two: number,
+//   three: number,
+//   four: number,
+//   five: number,
+//   six: number,
+//   seven: number,
+//   eight: number
+// }
+// const countAges = ():CA =>{
+//   const ca: CA = {
+//     one: 0,
+//   two: 0,
+//   three: 0,
+//   four: 0,
+//   five: 0,
+//   six: 0,
+//   seven: 0,
+//   eight: 0
+//   };
 
-  transportedHumans.map((person)=>{
-    if(typeof person.age !== 'number' || person.age <= 5) ca.one++;
-    if(typeof person.age === 'number' && (person.age >= 6 && person.age <= 10)) ca.two++;
-    if(typeof person.age === 'number' && (person.age >= 11 && person.age <= 15)) ca.three++;
-    if(typeof person.age === 'number' && (person.age >= 16 && person.age <= 20)) ca.four++;
-    if(typeof person.age === 'number' && (person.age >= 21 && person.age <= 25)) ca.five++;
-    if(typeof person.age === 'number' && (person.age >= 26 && person.age <= 30)) ca.six++;
-    if(typeof person.age === 'number' && (person.age >= 31 && person.age <= 35)) ca.seven++;
-    if(typeof person.age === 'number' && (person.age >= 36 && person.age <= 40)) ca.eight++;
-  });
-  return ca;
-};
-console.log(countAges())
+//   transportedHumans.map((person)=>{
+//     if(typeof person.age !== 'number' || person.age <= 5) ca.one++;
+//     if(typeof person.age === 'number' && (person.age >= 6 && person.age <= 10)) ca.two++;
+//     if(typeof person.age === 'number' && (person.age >= 11 && person.age <= 15)) ca.three++;
+//     if(typeof person.age === 'number' && (person.age >= 16 && person.age <= 20)) ca.four++;
+//     if(typeof person.age === 'number' && (person.age >= 21 && person.age <= 25)) ca.five++;
+//     if(typeof person.age === 'number' && (person.age >= 26 && person.age <= 30)) ca.six++;
+//     if(typeof person.age === 'number' && (person.age >= 31 && person.age <= 35)) ca.seven++;
+//     if(typeof person.age === 'number' && (person.age >= 36 && person.age <= 40)) ca.eight++;
+//   });
+//   return ca;
+// };
+// console.log(countAges())
 
 
 export const links = [

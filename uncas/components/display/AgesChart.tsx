@@ -1,4 +1,5 @@
 
+import { PieChart, Pie, Tooltip, ResponsiveContainer } from 'recharts';
 
 
 const AgesChart = () => {
