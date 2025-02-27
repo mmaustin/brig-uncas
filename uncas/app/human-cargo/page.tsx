@@ -16,7 +16,7 @@ import manifest from '@/public/manifest-8.png';
 const HumanCargo = () => {
   return (
     <div className="">
-      {/* <div className=" h-[725px] w-full flex flex-col justify-center items-center bg-[url(@/assets/manifest-8.png)] bg-cover bg-center mt-8"> */}
+      
       <div className="">
         <Image
           alt="Manifest Background"
