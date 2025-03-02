@@ -6,7 +6,7 @@ import { PieChart, Pie, Tooltip, ResponsiveContainer } from 'recharts';
 
 const AgesChart = () => {
   return (
-    <ResponsiveContainer width='100%' height={450} className='border mx-4'>
+    <ResponsiveContainer width='100%' height={450} className='mx-4'>
       <PieChart width={400} height={400} >
         <Pie
           dataKey="value"
@@ -19,8 +19,8 @@ const AgesChart = () => {
           fill="#231adb"
           label
         />
-        <Tooltip />
-      </PieChart>
+        <Tooltip wrapperStyle={{borderRadius: '25px'}} itemStyle={{color: 'green'}} offset={50}/>
+      </PieChart >
     </ResponsiveContainer>
   )
 }
