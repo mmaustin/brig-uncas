@@ -13,6 +13,7 @@ type AgesType = {
 }
 
 export const agesArray: AgesType[] = [
+  {name: 'Ages 36-40', value: 1},
   {name: 'Ages 0-5', value: 8},
   {name: 'Ages 6-10', value: 4},
   {name: 'Ages 11-15', value: 16},
@@ -20,7 +21,6 @@ export const agesArray: AgesType[] = [
   {name: 'Ages 21-25', value: 18},
   {name: 'Ages 26-30', value: 9},
   {name: 'Ages 31-35', value: 1},
-  {name: 'Ages 36-40', value: 1},
 ]
 
 export const transportedHumans = [
