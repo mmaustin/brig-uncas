@@ -15,7 +15,7 @@ import manifest from '@/public/manifest-8.png';
 const HumanCargo = () => {
   return (
     <section>
-      <div className="md:hidden w-full container">      
+      <div className=" w-full container">      
         <div className="">
           <Image
             alt="Manifest Background"
@@ -31,9 +31,9 @@ const HumanCargo = () => {
             }}
           />
         </div>
-        <section className="h-[450px] w-full my-8 flex justify-center items-center border border-red-500">
+        <section className="h-[450px] w-screen my-8 flex justify-center items-center border border-red-500">
           {/* <div className=" h-full w-full flex justify-center items-center border border-fuchsia-600"> */}
-          <Carousel className="mt-4 w-52">
+          <Carousel className="w-36 sm:w-52 sm:mt-4">
             <CarouselContent>
               {transportedHumans.map((person, i) => {
                 return <CarouselItem key={i} className="capitalize font-serif italic text-lg font-bold opacity"><ShowCarousel captive={person} /></CarouselItem>
