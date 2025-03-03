@@ -36,7 +36,7 @@ const HumanCargo = () => {
           <Carousel className="w-36 sm:w-52 sm:mt-4">
             <CarouselContent>
               {transportedHumans.map((person, i) => {
-                return <CarouselItem key={i} className="capitalize font-serif italic text-lg font-bold opacity"><ShowCarousel captive={person} /></CarouselItem>
+                return <CarouselItem key={i} className="capitalize font-serif italic text-lg font-bold opacity"><ShowCarousel  captive={person} /></CarouselItem>
               })}
             </CarouselContent>
             <CarouselPrevious className="opacity-30" />

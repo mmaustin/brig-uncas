@@ -7,6 +7,10 @@ type CaptiveTraits = {
   colour: string
 };
 
+// type CaptiveIndex = {
+//   index: number;
+// }
+
 const ShowCarousel = ({captive}: {captive: CaptiveTraits}):React.ReactNode => {
 
   return (
