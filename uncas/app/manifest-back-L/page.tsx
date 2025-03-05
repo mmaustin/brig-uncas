@@ -23,10 +23,6 @@ const ManifestBackLeft = () => {
         width={198}
       />
     </div>
-    // <div className="h-[500px] w-full flex justify-center items-center gap-8 border border-blue-700">
-    //   <div className="container justify-center items-center grid md:grid-cols-2 gap-8 border border-green-600">
-    //   </div>
-    // </div>
   )
 }
 export default ManifestBackLeft;
