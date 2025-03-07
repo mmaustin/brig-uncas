@@ -1,6 +1,7 @@
 import Image from "next/image"
 import manifest from '@/assets/manifest-6.png';
 import manifestA from '@/assets/manifest-7.png';
+//import { Carousel, CarouselContent,CarouselItem, CarouselNext,CarouselPrevious, } from "@/components/ui/carousel";
 
 
 const ManifestBackLeft = () => {
