@@ -15,10 +15,10 @@ import manifest from '@/public/manifest-8.png';
 const HumanCargo = () => {
   return (
     <section className="w-full h-[550px]">
-      <div className=" w-inherit h-full mx-10 flex justify-around items-center border border-green-500">
+      <div className=" w-inherit h-full mx-10 flex flex-col md:flex-wrap md:justify-around md:items-center border border-green-500">
         <div className="">
           <Image
-            className="h-[200px] w-[275px] sm:h-[250px] sm:w-[400px] md:h-[375px] border border-red-600"
+            className="h-[200px] w-[275px] sm:h-[250px] sm:w-[400px] md:h-[375px] md:w-[425px] lg:w-[500px] border border-red-600"
             src={manifest}
             alt="Manifest Back Left"
             priority
