@@ -14,23 +14,23 @@ import manifest from '@/public/manifest-8.png';
 
 const HumanCargo = () => {
   return (
-    <section>
-      <div className=" w-full container">      
+    <section className="w-full h-[550px]">
+      <div className=" w-inherit h-full mx-10 flex justify-around items-center border border-green-500">
         <div className="">
           <Image
-        className="h-[200px] w-[275px] sm:h-[250px] sm:w-[400px] md:h-[375px] md:w-[575px] border border-red-600"
-        src={manifest}
-        alt="Manifest Back Left"
-        priority
-        height={265}
-        width={198}
-        />
+            className="h-[200px] w-[275px] sm:h-[250px] sm:w-[400px] md:h-[375px] border border-red-600"
+            src={manifest}
+            alt="Manifest Back Left"
+            priority
+            height={265}
+            width={198}
+          />
         </div>
-        <section className="h-[450px] w-screen my-8 flex justify-center items-center border border-red-500">
-          <Carousel className="w-36 sm:w-52 sm:mt-4">
+        <section className="h-[250px] w-[200px] my-8 flex justify-center items-center">
+          <Carousel className="w-36 sm:w-44 sm:mt-4">
             <CarouselContent>
               {transportedHumans.map((person, i) => {
-                return <CarouselItem key={i} className="capitalize font-serif italic text-lg font-bold opacity"><ShowCarousel  captive={person} /></CarouselItem>
+                return <CarouselItem key={i} className="capitalize font-serif italic text-lg font-bold opacity"><ShowCarousel captive={person} /></CarouselItem>
               })}
             </CarouselContent>
             <CarouselPrevious className="opacity-30" />
