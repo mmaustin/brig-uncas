@@ -3,7 +3,7 @@ import manifest from '@/assets/manifest-6.png';
 import manifestA from '@/assets/manifest-5.png';
 
 
-const ManifestBackRight = () => {
+const TextBack = () => {
   return (
     <div className="h-full w-full flex flex-col justify-center items-center">
       <Image
@@ -25,4 +25,4 @@ const ManifestBackRight = () => {
     </div>
   )
 }
-export default ManifestBackRight;
+export default TextBack;

@@ -2,7 +2,7 @@ import Image from "next/image"
 import manifest from '@/public/manifest-8.png';
 
 
-const ManifestFrontLeft = () => {
+const TextFront = () => {
   return (
     <div className="h-full w-full flex flex-col justify-center items-center">
     <div className="h-[100%] w-[100%] flex justify-center items-center mx-4">
@@ -18,4 +18,4 @@ const ManifestFrontLeft = () => {
     </div>
   )
 }
-export default ManifestFrontLeft
+export default TextFront;
