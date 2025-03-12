@@ -157,28 +157,20 @@ export const transportedHumans = [
 
 export const links = [
   {
-    name: "Human Cargo",
-    path: '/human-cargo'
+    name: "Names-Front",
+    path: '/names-front'
   },
   {
-    name: "Manifest Front-Left",
-    path: '/manifest-front-L'
+    name: "Names-Back",
+    path: '/names-back'
   },
   {
-    name: "Manifest Front-Right",
-    path: '/manifest-front-R'
+    name: "Text-Front",
+    path: '/text-front'
   },
   {
-    name: "Manifest Back-Left",
-    path: '/manifest-back-L'
-  },
-  {
-    name: "Manifest Back-Right",
-    path: '/manifest-back-R'
-  },
-  {
-    name: "Ages",
-    path: '/ages'
+    name: "Text-Back",
+    path: '/text-back'
   }
 ];
 
