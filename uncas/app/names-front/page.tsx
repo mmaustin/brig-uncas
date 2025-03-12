@@ -12,7 +12,7 @@ import { transportedHumans } from "@/constants/captiveArray";
 import Image from "next/image";
 import manifest from '@/public/manifest-8.png';
 
-const HumanCargo = () => {
+const NamesFront = () => {
   return (
     <section className="w-full h-[550px]">
       <div className=" w-inherit h-full mx-10 flex flex-col justify-center  md:flex-wrap md:justify-around items-center border border-green-500">
@@ -41,7 +41,7 @@ const HumanCargo = () => {
     </section>
   )
 }
-export default HumanCargo;
+export default NamesFront;
 
 //code for image to cover the screen
 {/* <Image

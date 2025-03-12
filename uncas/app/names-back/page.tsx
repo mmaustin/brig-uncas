@@ -4,7 +4,7 @@
 //import { Carousel, CarouselContent,CarouselItem, CarouselNext,CarouselPrevious, } from "@/components/ui/carousel";
 
 
-const ManifestBackLeft = () => {
+const NamesBack = () => {
   return (
     <div className="grid sm:grid-cols-2 md:grid-cols-3 gap-4 mx-10 justify-center items-center border border-blue-600">
       {/* <Image
@@ -42,4 +42,4 @@ const ManifestBackLeft = () => {
     </div>
   )
 }
-export default ManifestBackLeft;
+export default NamesBack;
