@@ -171,6 +171,10 @@ export const links = [
   {
     name: "Text-Back",
     path: '/text-back'
+  },
+  {
+    name: "Ages",
+    path: '/ages'
   }
 ];
 
