@@ -8,7 +8,7 @@ import {
   CarouselNext,
   CarouselPrevious,
 } from "@/components/ui/carousel";
-import { transportedHumansFront } from "@/constants/captiveArray";
+import { transportedHumansBack } from "@/constants/captiveArray";
 import Image from "next/image";
 import manifest from '@/public/manifest-8.png';
 
@@ -30,7 +30,7 @@ const NamesBack = () => {
         <section className="h-[250px] w-[200px] my-8 flex justify-center items-center bg-my-beige rounded-lg">
           <Carousel className="w-36 sm:w-44 mt-4">
             <CarouselContent>
-              {transportedHumansFront.map((person, i) => {
+              {transportedHumansBack.map((person, i) => {
                 return <CarouselItem key={i} className="capitalize font-serif italic text-lg font-bold opacity "><ShowCarousel captive={person} /></CarouselItem>
               })}
             </CarouselContent>

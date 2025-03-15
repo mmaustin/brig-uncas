@@ -189,6 +189,33 @@ export const transportedHumansFront = [
   {index: 68, name: 'Thomas Surrey', age: 2, feet: '2\'', inches: '6 1/4"', colour: 'Black'},
 ];
 
+export const transportedHumansBack = [
+  {index: 69, name: 'Lucinda Brown', age: 20, feet: '5\'', inches: '3"', colour: 'Yellow'},
+  {index: 70, name: 'Mary Morris', age: 15, feet: '11\'', inches: '8 1/4"', colour: 'Yellow'},
+  {index: 71, name: 'Clarasey Fletcher', age: 24, feet: '5\'', inches: '4 1/2"', colour: 'Black'},
+  {index: 72, name: 'Dolly Armstead', age: 25, feet: '4\'', inches: '11 1/4"', colour: 'Black'},
+  {index: 73, name: 'Mary Carter', age: 16, feet: '5\'', inches: '3 1/4"', colour: 'Black'},
+  {index: 74, name: 'Elin Beal', age: 15, feet: '5\'', inches: '.."', colour: 'Black'},
+  {index: 75, name: 'Secelia Brown', age: 22, feet: '5\'', inches: '3 1/2"', colour: 'Black'},
+  {index: 76, name: 'Moses Murphy', age: 27, feet: '6\'', inches: '2 1/2"', colour: 'Black'},
+  {index: 77, name: 'Thomas Johnson', age: 19, feet: '5\'', inches: '8"', colour: 'Black'},
+  {index: 78, name: 'Peter Settles', age: 26, feet: '5\'', inches: '5"', colour: 'Black'},
+  {index: 79, name: 'Amus Brown', age: 27, feet: '5\'', inches: '3"', colour: 'Black'},
+  {index: 80, name: 'Aaron Carter', age: 24, feet: '5\'', inches: '7 1/4"', colour: 'Black'},
+  {index: 81, name: 'Levy Williams', age: 20, feet: '5\'', inches: '5"', colour: 'Yellow'},
+  {index: 82, name: 'Christopher Yates', age: 28, feet: '5\'', inches: '7 1/2"', colour: 'Black'},
+  {index: 83, name: 'William Wilson', age: 17, feet: '5\'', inches: '1 1/2"', colour: 'Black'},
+  {index: 84, name: 'Gabriel Singleton', age: 17, feet: '5\'', inches: '6 1/4"', colour: 'Black'},
+  {index: 85, name: 'Martin ..', age: 16, feet: '5\'', inches: '.."', colour: 'Black'},
+  {index: 86, name: 'George Miller', age: 18, feet: '5\'', inches: '2 1/2"', colour: 'Black'},
+  {index: 87, name: 'Charles Brierly', age: 17, feet: '5\'', inches: '7"', colour: 'Yellow'},
+  {index: 88, name: 'Lee ...', age: 12, feet: '4\'', inches: '4"', colour: 'Black'},
+  {index: 89, name: 'Elijah Butler', age: 20, feet: '5\'', inches: '9"', colour: 'Black'},
+  {index: 90, name: 'Mathew Hopewell', age: 16, feet: '5\'', inches: '.."', colour: 'Black'},
+  {index: 91, name: 'Samuel Burges', age: 23, feet: '5\'', inches: '4 1/2"', colour: 'Black'},
+  {index: 92, name: 'James Bauery', age: 22, feet: '5\'', inches: '8 3/4"', colour: 'Black'},
+];
+
 
 export const links = [
   {
