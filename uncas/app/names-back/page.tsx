@@ -15,8 +15,8 @@ import manifest from '@/public/manifest-8.png';
 const NamesBack = () => {
   return (
     <section className="w-full h-[550px]">
-      <div className=" w-inherit h-full mx-10 flex flex-col justify-center  md:flex-wrap md:justify-around items-center">
-        <div className="">
+      <div className=" w-inherit h-full mx-10 flex flex-col justify-center  md:flex-wrap md:justify-around items-center border">
+        <div className="border border-my-beige">
           <Image
             className="h-[200px] w-[275px] sm:h-[250px] sm:w-[400px] md:h-[375px] md:w-[425px] lg:w-[500px]"
             src={manifest}
@@ -26,7 +26,7 @@ const NamesBack = () => {
             width={198}
           />
         </div>
-        <section className="h-[250px] w-[200px] my-8 flex justify-center items-center bg-amber-200 rounded-lg">
+        <section className="h-[250px] w-[200px] my-8 flex justify-center items-center bg-my-beige rounded-lg">
           <Carousel className="w-36 sm:w-44 sm:mt-4">
             <CarouselContent>
               {transportedHumansFront.map((person, i) => {
