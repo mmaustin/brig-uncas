@@ -15,10 +15,11 @@ import manifest from '@/public/manifest-8.png';
 const NamesBack = () => {
   return (
     <section className="w-full h-[550px]">
-      <div className=" w-inherit h-full mx-10 flex flex-col justify-center  md:flex-wrap md:justify-around items-center border">
-        <div className="border border-my-beige">
+      <div className=" w-inherit h-full mx-10 flex flex-col justify-center  md:flex-wrap md:justify-around items-center">
+        <div className="flex flex-col justify-center items-center">
+          <div className="text-center font-serif italic text-sm rounded-lg w-[275px] sm:w-[400px] md:w-[425px] lg:w-[500px] bg-my-beige mx-2">No. / Name of Negroes / Age / Feet / Inches / Colour / Remarks</div>
           <Image
-            className="h-[200px] w-[275px] sm:h-[250px] sm:w-[400px] md:h-[375px] md:w-[425px] lg:w-[500px]"
+            className="rounded-lg h-[200px] w-[275px] sm:h-[250px] sm:w-[400px] md:h-[375px] md:w-[425px] lg:w-[500px]"
             src={manifest}
             alt="Manifest Back Left"
             priority
