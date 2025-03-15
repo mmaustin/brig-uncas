@@ -26,11 +26,11 @@ const NamesBack = () => {
             width={198}
           />
         </div>
-        <section className="h-[250px] w-[200px] my-8 flex justify-center items-center">
+        <section className="h-[250px] w-[200px] my-8 flex justify-center items-center bg-amber-200 rounded-lg">
           <Carousel className="w-36 sm:w-44 sm:mt-4">
             <CarouselContent>
               {transportedHumansFront.map((person, i) => {
-                return <CarouselItem key={i} className="capitalize font-serif italic text-lg font-bold opacity"><ShowCarousel captive={person} /></CarouselItem>
+                return <CarouselItem key={i} className="capitalize font-serif italic text-lg font-bold opacity "><ShowCarousel captive={person} /></CarouselItem>
               })}
             </CarouselContent>
             <CarouselPrevious className="opacity-30" />

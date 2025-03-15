@@ -16,11 +16,14 @@ const ShowCarousel = ({captive}: {captive: CaptiveTraits}):React.ReactNode => {
 
   return (
     <div className="flex flex-col justify-center items-center">
-      <p className="">
+      <div className="flex flex-col justify-center items-center">
         {
-          captive.index ? <span>{captive.index})</span> : <></>
-        } {captive.name}
-      </p>
+          captive.index ? <p>{captive.index})</p> : null
+        }
+        <p className="text-center">
+          {captive.name}
+        </p>
+      </div>
       <p>{captive.age}</p>
       <p>{captive.feet}</p>
       <p>{captive.inches}</p>
