@@ -18,7 +18,7 @@ const ShowCarousel = ({captive}: {captive: CaptiveTraits}):React.ReactNode => {
     <div className="flex flex-col justify-center items-center">
       <div className="flex flex-col justify-center items-center">
         {
-          captive.index ? <p>{captive.index})</p> : null
+          captive.index ? <p><span className="text-yellow-300">*</span> {captive.index})</p> : null
         }
         <p className="text-center">
           {captive.name}
