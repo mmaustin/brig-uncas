@@ -11,6 +11,8 @@ import {
 import { transportedHumansFront } from "@/constants/captiveArray";
 import Image from "next/image";
 import manifest from '@/public/manifest-8.png';
+//import { ScrollArea } from "@/components/ui/scroll-area";
+
 
 const TextFront = () => {
   return (

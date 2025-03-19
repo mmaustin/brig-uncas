@@ -1,16 +1,18 @@
 'use client';
 
-import ShowCarousel from "@/components/display/ShowCarousel";
-import {
-  Carousel,
-  CarouselContent,
-  CarouselItem,
-  CarouselNext,
-  CarouselPrevious,
-} from "@/components/ui/carousel";
-import { transportedHumansBack } from "@/constants/captiveArray";
+// import ShowCarousel from "@/components/display/ShowCarousel";
+// import {
+//   Carousel,
+//   CarouselContent,
+//   CarouselItem,
+//   CarouselNext,
+//   CarouselPrevious,
+// } from "@/components/ui/carousel";
+// import { transportedHumansBack } from "@/constants/captiveArray";
 import Image from "next/image";
 import manifest from '@/public/manifest-6.png';
+import { ScrollArea } from "@/components/ui/scroll-area";
+import { backpageText } from "@/constants/captiveArray";
 
 const TextBack = () => {
   return (
@@ -27,8 +29,16 @@ const TextBack = () => {
             width={198}
           />
         </div>
-        <section className="h-[250px] w-[200px] my-8 flex justify-center items-center bg-green-800/80 rounded-lg">
-          <Carousel className="w-36 sm:w-44 mt-4">
+        <ScrollArea className="h-[250px] w-[200px] sm:w-[250px] my-8 flex justify-center items-center bg-green-800/80 rounded-lg">
+          {backpageText.map((text, i) => (
+            <section key={i}>
+              <div key={i} className="text-sm">
+                {text}
+              </div>
+              <div className="my-2 border"></div>
+            </section>
+          ))}
+          {/* <Carousel className="w-36 sm:w-44 mt-4">
             <CarouselContent>
               {transportedHumansBack.map((person, i) => {
                 return <CarouselItem key={i} className="text-white/80 capitalize font-serif italic text-lg font-bold opacity "><ShowCarousel captive={person} /></CarouselItem>
@@ -36,8 +46,8 @@ const TextBack = () => {
             </CarouselContent>
             <CarouselPrevious className="opacity-30" />
             <CarouselNext className="opacity-30" />
-          </Carousel>
-        </section>
+          </Carousel> */}
+        </ScrollArea>
       </div>
     </section>
   )
