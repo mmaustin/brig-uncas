@@ -23,7 +23,7 @@ const TextBack = () => {
         <ScrollArea className="h-[250px] w-[200px] sm:w-[250px] my-8 flex justify-center items-center bg-green-800/80 rounded-lg">
           {backpageText.map((text, i) => (
             <section key={i} className="m-2">
-              <div key={i} className="text-sm text-my-beige font-serif font-semibold">
+              <div key={i} className="text-sm text-white/80 font-serif font-semibold italic">
                 {text}
               </div>
               {i !== 1 && 
