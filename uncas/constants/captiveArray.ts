@@ -245,6 +245,12 @@ export const backpageText = [
   "District of Alexandria Port of Alexandria the 30th day of October 1833. I John Armfield owner of the persons named and particularly described in the within Manifest, and Joseph C Moore Master of the Brig Uncas do solemnly, sincerely, and truly swear, each of us, to the best of our knowledge and belief, that the Negroes within named, have not been imported into the United States, since the first day of January one thousand, eight hundred and eight; and that under the Laws of the United States are held to service or labor as slaves, and are not entitled to freedom under these Laws, at a certain time, and after a known prior of service —Sworn to this thirtieth day of October 1833. before C T. Chapman Collector So help us God. John Armfield Joseph C Moore "
 ];
 
+export const frontpageText = [
+  'Manifest of Negroes, Mulattoes and persons of Colour, taken on board the Brig Uncas, whereof Joseph C Moore is Master, burthen 155 1/25 Tons, to be transported from the Port of Alexandria, in the District of Columbia for the purpose of being sold or disposed of as slaves, or to be held to service or labour.',
+  'shipped by Franklin A. Armfield Alex to Isaac Franklin New Orleans.',
+  'Shipped by Franklin A. Armfield Aler over to Isaac Franklin New Orleans'
+];
+
 
 
 
