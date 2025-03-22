@@ -18,8 +18,10 @@ const Footer = () => {
             <p className="text-xs text-white">{year}</p>
             <p className="text-xs text-white">McCray Austin</p>
           </div>
-          <div className="w-[200px]">
-            Something Goes Here
+          <div className="w-[200px] text-center">
+            <p>
+              Something Goes Here
+            </p>
           </div>
         </div>
       </div>

@@ -18,8 +18,8 @@ export const agesArray: AgesType[] = [
   {name: 'Ages 11-15', value: 16},
   {name: 'Ages 16-20', value: 35},
   {name: 'Ages 21-25', value: 18},
-  {name: 'Ages 26-30', value: 9},
   {name: 'Ages 31-35', value: 1},
+  {name: 'Ages 26-30', value: 9},
   {name: 'Ages 36-40', value: 1},
 ]
 
