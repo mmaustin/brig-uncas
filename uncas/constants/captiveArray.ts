@@ -242,7 +242,9 @@ export const links = [
 
 export const backpageText = [
   "Shipped by Franklin & Armfield Alex to Isaac Franklin New Orleans",
-  "District of Alexandria Port of Alexandria the 30th day of October 1833. I John Armfield owner of the persons named and particularly described in the within Manifest, and Joseph C Moore Master of the Brig Uncas do solemnly, sincerely, and truly swear, each of us, to the best of our knowledge and belief, that the Negroes within named, have not been imported into the United States, since the first day of January one thousand, eight hundred and eight; and that under the Laws of the United States are held to service or labor as slaves, and are not entitled to freedom under these Laws, at a certain time, and after a known prior of service —Sworn to this thirtieth day of October 1833. before C T. Chapman Collector So help us God. John Armfield Joseph C Moore "
+  "District of Alexandria Port of Alexandria the 30th day of October 1833. I John Armfield owner of the persons named and particularly described in the within Manifest, and Joseph C Moore Master of the Brig Uncas do solemnly, sincerely, and truly swear, each of us, to the best of our knowledge and belief, that the Negroes within named, have not been imported into the United States, since the first day of January one thousand, eight hundred and eight; and that under the Laws of the United States are held to service or labor as slaves, and are not entitled to freedom under these Laws, at a certain time, and after a known prior of service —",
+  "Sworn to this thirtieth day of October 1833. before C T. Chapman Collector",
+  "So help us God. John Armfield Joseph C Moore "
 ];
 
 export const frontpageText = [
