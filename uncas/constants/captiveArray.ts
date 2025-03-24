@@ -247,7 +247,7 @@ export const backpageText = [
 
 export const frontpageText = [
   'Manifest of Negroes, Mulattoes and persons of Colour, taken on board the Brig Uncas, whereof Joseph C Moore is Master, burthen 155 1/25 Tons, to be transported from the Port of Alexandria, in the District of Columbia for the purpose of being sold or disposed of as slaves, or to be held to service or labour.',
-  'shipped by Franklin A. Armfield Alex to Isaac Franklin New Orleans.',
+  'Shipped by Franklin A. Armfield Alex to Isaac Franklin New Orleans.',
   'Shipped by Franklin A. Armfield Alex over to Isaac Franklin New Orleans'
 ];
 
