@@ -19,6 +19,7 @@ const AgesChart = () => {
           outerRadius={100}
           fill="#231adb"
           label
+          style={{outline: 'none'}}
         />
         <Tooltip wrapperStyle={{borderRadius: '25px'}} itemStyle={{color: 'green'}} offset={50}/>
       </PieChart>
