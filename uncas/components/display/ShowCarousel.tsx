@@ -8,18 +8,12 @@ type CaptiveTraits = {
   colour: string
 };
 
-// type CaptiveIndex = {
-//   index: number;
-// }
-
 const ShowCarousel = ({captive}: {captive: CaptiveTraits}):React.ReactNode => {
 
   return (
     <div className="flex flex-col justify-center items-center">
       <div className="flex flex-col justify-center items-center">
-        {
-          captive.index <= 68 ? <p><span className="text-yellow-300">*</span> {captive.index})</p> : null
-        }
+        <p><span className="text-yellow-300">*</span> {captive.index})</p> 
         <p className="text-center">
           {captive.name}
         </p>
