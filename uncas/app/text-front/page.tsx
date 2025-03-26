@@ -4,6 +4,7 @@ import Image from "next/image";
 import manifest from '@/public/manifest-8.png';
 import { ScrollArea } from "@/components/ui/scroll-area";
 import { frontpageText } from "@/constants/captiveArray";
+//import house from '@/public/house-2.png'
 
 
 const TextFront = () => {
