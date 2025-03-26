@@ -10,7 +10,7 @@ const TextBack = () => {
     <section className="w-full h-[650px] md:h-[550px]">
       <div className=" w-inherit h-full mx-10 flex flex-col justify-center  md:flex-wrap md:justify-around items-center">
         <div className="flex flex-col justify-center items-center">
-          <div className="text-center font-serif italic text-sm w-[275px] sm:w-[400px] md:w-[400px] lg:w-[500px] text-white/80 bg-green-800/80 mx-2">
+          <div className="text-center font-serif italic text-sm w-[275px] sm:w-[400px] md:w-[400px] lg:w-[500px] text-white/80 bg-green-800/80 mx-2 border border-blue-800">
             No. / Name of Negroes / Age / Feet / Inches / Colour / Remarks
             <span className="text-yellow-300">*</span>
           </div>
