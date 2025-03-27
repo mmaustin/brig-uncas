@@ -10,13 +10,15 @@ import houseThree from '@/public/house-3.png';
 import Image from "next/image";
 import { ScrollArea } from "@/components/ui/scroll-area";
 import { frontpageText } from "@/constants/captiveArray";
+import HomePageText from "@/components/display/HomePageText";
 
 
 
 export default function Home() {
 
   return (
-    <div className="w-full h-full mt-8 flex flex-col justify-center items-center text-lg font-serif gap-6 border border-red-400">
+    <div className="w-full h-full mt-8 flex flex-col justify-center items-center text-lg font-serif gap-6">
+      <HomePageText />
       <Popover>
         <PopoverTrigger>
           <Image

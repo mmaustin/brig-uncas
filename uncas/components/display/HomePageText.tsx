@@ -3,7 +3,7 @@
 
 const HomePageText = () => {
   return (
-    <div className="h-[200px] w-full border border-blue-500">HomePageText</div>
+    <div className="h-[150px] w-full container text-center">Home Page Text Area</div>
   )
 }
 export default HomePageText;

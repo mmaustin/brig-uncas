@@ -12,7 +12,7 @@ const Navbar = () => {
     <div className="items-center mx-8 w-full backdrop-blur-xl">
       <div className="flex justify-between items-center mb-8 w-full h-full">
         <h1 className="">
-          <Link href={'/'} className="text-2xl font-extrabold font-serif uppercase text-white" >Brig Uncas</Link>
+          <Link href={'/'} className="text-2xl text-yellow-300 font-extrabold font-serif uppercase text-white" >Brig Uncas</Link>
         </h1>    
         <nav className="flex gap-6">
           {links.map((link, i) => {
