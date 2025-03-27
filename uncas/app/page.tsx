@@ -16,7 +16,7 @@ import { frontpageText } from "@/constants/captiveArray";
 export default function Home() {
 
   return (
-    <div className="w-full h-full flex flex-col justify-center items-center text-lg font-serif gap-6">
+    <div className="w-full h-full mt-8 flex flex-col justify-center items-center text-lg font-serif gap-6 border border-red-400">
       <Popover>
         <PopoverTrigger>
           <Image
