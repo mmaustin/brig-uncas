@@ -19,22 +19,22 @@ export default function Home() {
   return (
     <div className="w-full h-full mt-8 flex flex-col justify-center items-center text-lg font-serif gap-6">
       <HomePageText />
-      <div className="capitalize hidden md:flex w-full h-full mt-0 flex-col justify-center items-center text-lg font-serif gap-6 border">
+      <div className="capitalize hidden sm:flex w-full h-full mt-0 flex-col justify-center items-center text-lg font-serif gap-6">
         <div className="container flex flex-row justify-around items-center">
           <Image
-            className="h-[250px] w-[150px]"
+            className="h-[250px] w-[180px]"
             src={houseOne}
             alt="Manifest Back Left"
             priority
             height={265}
             width={198}
           />
-          <div className="w-[50%]">
+          <div className="w-[50%] font-sans italic font-semibold">
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore qui doloremque cumque iste sed, ducimus placeat blanditiis necessitatibus quod exercitationem a nesciunt, odit laborum! Reprehenderit repudiandae consequatur sint beatae laudantium?
           </div>
         </div>
         <div className="container flex flex-row justify-around items-center">
-          <div className="w-[50%]">
+          <div className="w-[50%] font-sans italic font-semibold">
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore qui doloremque cumque iste sed, ducimus placeat blanditiis necessitatibus quod exercitationem a nesciunt, odit laborum! Reprehenderit repudiandae consequatur sint beatae laudantium?
           </div>
           <Image
@@ -55,16 +55,18 @@ export default function Home() {
             height={265}
             width={198}
           />
-          <div className="w-[50%]">
+          <div className="w-[50%] font-sans italic font-semibold">
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore qui doloremque cumque iste sed, ducimus placeat blanditiis necessitatibus quod exercitationem a nesciunt, odit laborum! Reprehenderit repudiandae consequatur sint beatae laudantium?
           </div>
         </div>
       </div>
-      <div className="md:hidden w-full h-full flex flex-col justify-center items-center text-lg font-serif gap-6">
+
+
+      <div className="sm:hidden w-full h-full flex flex-col justify-center items-center text-lg font-serif gap-6">
         <Popover>
           <PopoverTrigger>
             <Image
-              className="h-[250px] w-[150px]"
+              className="h-[250px] w-[200px]"
               src={houseOne}
               alt="Manifest Back Left"
               priority
