@@ -20,7 +20,7 @@ export default function Home() {
     <div className="w-full h-full mt-8 flex flex-col justify-center items-center text-lg font-serif gap-6">
       <HomePageText />
       <div className="capitalize hidden md:flex w-full h-full mt-0 flex-col justify-center items-center text-lg font-serif gap-6 border">
-        <>
+        <div className="container flex flex-row justify-around items-center">
           <Image
             className="h-[250px] w-[150px]"
             src={houseOne}
@@ -29,8 +29,14 @@ export default function Home() {
             height={265}
             width={198}
           />
-        </>
-        <>
+          <div className="w-[50%]">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore qui doloremque cumque iste sed, ducimus placeat blanditiis necessitatibus quod exercitationem a nesciunt, odit laborum! Reprehenderit repudiandae consequatur sint beatae laudantium?
+          </div>
+        </div>
+        <div className="container flex flex-row justify-around items-center">
+          <div className="w-[50%]">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore qui doloremque cumque iste sed, ducimus placeat blanditiis necessitatibus quod exercitationem a nesciunt, odit laborum! Reprehenderit repudiandae consequatur sint beatae laudantium?
+          </div>
           <Image
             className="h-[200px] w-[275px]"
             src={houseThree}
@@ -39,7 +45,20 @@ export default function Home() {
             height={265}
             width={198}
           />
-        </>
+        </div>
+        <div className="container flex flex-row justify-around items-center">
+          <Image
+            className="h-[200px] w-[275px]"
+            src={houseTwo}
+            alt="Manifest Back Left"
+            priority
+            height={265}
+            width={198}
+          />
+          <div className="w-[50%]">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore qui doloremque cumque iste sed, ducimus placeat blanditiis necessitatibus quod exercitationem a nesciunt, odit laborum! Reprehenderit repudiandae consequatur sint beatae laudantium?
+          </div>
+        </div>
       </div>
       <div className="md:hidden w-full h-full flex flex-col justify-center items-center text-lg font-serif gap-6">
         <Popover>
