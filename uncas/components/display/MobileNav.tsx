@@ -21,7 +21,7 @@ const MobileNav = () => {
   return (
     <nav className="w-full flex justify-around items center">
       <h1 className="">
-        <Link href={'/'} className="text-lg font-extrabold font-serif uppercase text-white" >Brig Uncas</Link>
+        <Link href={'/'} className="text-lg font-extrabold font-serif uppercase text-yellow-300" >Brig Uncas</Link>
       </h1>
       <div className="">
         <DropdownMenu>
