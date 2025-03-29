@@ -6,7 +6,7 @@ import houseThree from '@/public/house-3.png';
 
 const DesktopHome = () => {
   return (
-    <div className="capitalize hidden sm:flex w-full h-full mt-0 flex-col justify-center items-center text-lg font-serif gap-6">
+    <div className="hidden sm:flex w-full h-full mt-0 flex-col justify-center items-center text-lg font-serif gap-6">
       <div className="container flex flex-row justify-around items-center">
         <Image
           className="h-[250px] w-[180px]"
@@ -16,8 +16,8 @@ const DesktopHome = () => {
           height={265}
           width={198}
         />
-        <div className="w-[50%] font-sans italic font-semibold">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore qui doloremque cumque iste sed, ducimus placeat blanditiis necessitatibus quod exercitationem a nesciunt, odit laborum! Reprehenderit repudiandae consequatur sint beatae laudantium?
+        <div className="w-[50%] font-sans italic font-semibold sm:text-base lg:text-lg">
+          <span className="not-italic font-normal">1315 Duke Street, Alexandria, Virginia.</span>  The offices of Franklin & Armfield were once located in this building.  The building was purchased by the city of Alexandria in 2020.  Two years later, the building was reopened as Freedom House Museum.
         </div>
       </div>
       <div className="container flex flex-row justify-around items-center">
