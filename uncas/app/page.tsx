@@ -11,7 +11,7 @@ import Image from "next/image";
 import { ScrollArea } from "@/components/ui/scroll-area";
 import { frontpageText } from "@/constants/captiveArray";
 import HomePageText from "@/components/display/HomePageText";
-
+import DesktopHome from "@/components/display/DesktopHome";
 
 
 export default function Home() {
@@ -19,7 +19,8 @@ export default function Home() {
   return (
     <div className="w-full h-full mt-8 flex flex-col justify-center items-center text-lg font-serif gap-6">
       <HomePageText />
-      <div className="capitalize hidden sm:flex w-full h-full mt-0 flex-col justify-center items-center text-lg font-serif gap-6">
+      <DesktopHome />
+      {/* <div className="capitalize hidden sm:flex w-full h-full mt-0 flex-col justify-center items-center text-lg font-serif gap-6">
         <div className="container flex flex-row justify-around items-center">
           <Image
             className="h-[250px] w-[180px]"
@@ -59,7 +60,7 @@ export default function Home() {
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore qui doloremque cumque iste sed, ducimus placeat blanditiis necessitatibus quod exercitationem a nesciunt, odit laborum! Reprehenderit repudiandae consequatur sint beatae laudantium?
           </div>
         </div>
-      </div>
+      </div> */}
 
 
       <div className="sm:hidden w-full h-full flex flex-col justify-center items-center text-lg font-serif gap-6">
