@@ -42,8 +42,8 @@ const DesktopHome = () => {
           height={265}
           width={198}
         />
-        <div className="w-[50%] font-sans italic font-semibold">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore qui doloremque cumque iste sed, ducimus placeat blanditiis necessitatibus quod exercitationem a nesciunt, odit laborum! Reprehenderit repudiandae consequatur sint beatae laudantium?
+        <div className="w-[50%] font-sans italic font-semibold sm:text-base lg:text-lg">
+          <span className="not-italic font-normal">Union soldiers milling about, 1861.</span>  The featureless white structure is where the enslaved were held, as they awaited shipment away from everything they had ever known and to the horrific realities of the cotton South.
         </div>
       </div>
     </div>
