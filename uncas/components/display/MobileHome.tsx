@@ -26,7 +26,7 @@ const MobileHome = () => {
           />
         </PopoverTrigger>
         <PopoverContent className={cn("bg-slate-400 flex justify-center items-center h-auto w-auto m-0 p-0 z-0")}>
-          <ScrollArea className="h-[100px] w-[250px] my-0 flex justify-center items-center bg-green-800/80 rounded-lg">
+          <ScrollArea className="h-[150px] w-[250px] my-0 flex justify-center items-center bg-green-800/80 rounded-lg">
             <section className="m-2">
               <div className="text-sm text-white/80 font-serif font-semibold italic">
                 <span className="not-italic font-normal">1315 Duke Street, Alexandria, Virginia.</span>  The offices of Franklin & Armfield were once located in this building.  The building was purchased by the city of Alexandria in 2020.  Two years later, it was reopened as Freedom House Museum.
@@ -47,7 +47,7 @@ const MobileHome = () => {
           />
         </PopoverTrigger>
         <PopoverContent className={cn("bg-slate-400 flex justify-center items-center h-auto w-auto m-0 p-0 z-0")}>
-          <ScrollArea className="h-[100px] w-[250px] my-0 flex justify-center items-center bg-green-800/80 rounded-lg">
+          <ScrollArea className="h-[150px] w-[250px] my-0 flex justify-center items-center bg-green-800/80 rounded-lg">
             <section className="m-2">
               <div className="text-sm text-white/80 font-serif font-semibold italic">
                 <span className="not-italic font-normal">Union soldiers at 1315 Duke Street ≈ 1862.</span>  Price, Birch, and Company, another domestic slave trading firm, operated out of the building once used by Franklin & Armfield.  Armfield, upon Franklin&apos;s retirement, sent the firm&apos;s last shipment of slaves to New Orleans in 1836.
@@ -68,7 +68,7 @@ const MobileHome = () => {
           />
         </PopoverTrigger>
         <PopoverContent className={cn("bg-slate-400 flex justify-center items-center h-auto w-auto m-0 p-0 z-0")}>
-          <ScrollArea className="h-[100px] w-[250px] my-0 flex justify-center items-center bg-green-800/80 rounded-lg">
+          <ScrollArea className="h-[150px] w-[250px] my-0 flex justify-center items-center bg-green-800/80 rounded-lg">
             <section className="m-2">
               <div className="text-sm text-white/80 font-serif font-semibold italic">
                 <span className="not-italic font-normal">Union soldiers milling about, 1861.</span>  The featureless white structure is where the enslaved were held, as they awaited shipment away from everything they had ever known and to the horrific realities of the cotton South.
