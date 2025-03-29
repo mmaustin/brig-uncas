@@ -21,8 +21,8 @@ const DesktopHome = () => {
         </div>
       </div>
       <div className="container flex flex-row justify-around items-center">
-        <div className="w-[50%] font-sans italic font-semibold">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore qui doloremque cumque iste sed, ducimus placeat blanditiis necessitatibus quod exercitationem a nesciunt, odit laborum! Reprehenderit repudiandae consequatur sint beatae laudantium?
+        <div className="w-[50%] font-sans italic font-semibold sm:text-base lg:text-lg">
+          <span className="not-italic font-normal">Union soldiers at 1315 Duke Street ≈ 1862.</span>  Price, Birch, and Company, another domestic slave trading firm, operated out of the building once used by Franklin & Armfield.  Armfield, upon Franklin&apos;s retirement, sent the firm&apos;s last shipment of slaves to New Orleans in 1836.
         </div>
         <Image
           className="h-[200px] w-[275px]"
