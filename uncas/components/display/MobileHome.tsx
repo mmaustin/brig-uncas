@@ -9,7 +9,6 @@ import houseTwo from '@/public/house-2.png';
 import houseThree from '@/public/house-3.png';
 import Image from "next/image";
 import { ScrollArea } from "@/components/ui/scroll-area";
-import { frontpageText } from "@/constants/captiveArray";
 
 
 const MobileHome = () => {
@@ -28,16 +27,11 @@ const MobileHome = () => {
         </PopoverTrigger>
         <PopoverContent className={cn("bg-slate-400 flex justify-center items-center h-auto w-auto m-0 p-0 z-0")}>
           <ScrollArea className="h-[100px] w-[200px] my-0 flex justify-center items-center bg-green-800/80 rounded-lg">
-            {frontpageText.map((text, i) => (
-              <section key={i} className="m-2">
-                <div key={i} className="text-sm text-white/80 font-serif font-semibold italic">
-                  <span className="text-yellow-300">*</span> {text}
-                </div>
-                {i !== 2 &&
-                  <div className="my-2 border"></div>
-                }
-              </section>
-            ))}
+            <section className="m-2">
+              <div className="text-sm text-white/80 font-serif font-semibold italic">
+                <span className="not-italic font-normal">1315 Duke Street, Alexandria, Virginia.</span>  The offices of Franklin & Armfield were once located in this building.  The building was purchased by the city of Alexandria in 2020.  Two years later, it was reopened as Freedom House Museum.
+              </div>
+            </section>
           </ScrollArea>
         </PopoverContent>
       </Popover>
@@ -54,16 +48,11 @@ const MobileHome = () => {
         </PopoverTrigger>
         <PopoverContent className={cn("bg-slate-400 flex justify-center items-center h-auto w-auto m-0 p-0 z-0")}>
           <ScrollArea className="h-[100px] w-[200px] my-0 flex justify-center items-center bg-green-800/80 rounded-lg">
-            {frontpageText.map((text, i) => (
-              <section key={i} className="m-2">
-                <div key={i} className="text-sm text-white/80 font-serif font-semibold italic">
-                  <span className="text-yellow-300">*</span> {text}
-                </div>
-                {i !== 2 &&
-                  <div className="my-2 border"></div>
-                }
-              </section>
-            ))}
+            <section className="m-2">
+              <div className="text-sm text-white/80 font-serif font-semibold italic">
+                <span className="not-italic font-normal">Union soldiers at 1315 Duke Street ≈ 1862.</span>  Price, Birch, and Company, another domestic slave trading firm, operated out of the building once used by Franklin & Armfield.  Armfield, upon Franklin&apos;s retirement, sent the firm&apos;s last shipment of slaves to New Orleans in 1836.
+              </div>
+            </section>
           </ScrollArea>
         </PopoverContent>
       </Popover>
@@ -80,16 +69,11 @@ const MobileHome = () => {
         </PopoverTrigger>
         <PopoverContent className={cn("bg-slate-400 flex justify-center items-center h-auto w-auto m-0 p-0 z-0")}>
           <ScrollArea className="h-[100px] w-[200px] my-0 flex justify-center items-center bg-green-800/80 rounded-lg">
-            {frontpageText.map((text, i) => (
-              <section key={i} className="m-2">
-                <div key={i} className="text-sm text-white/80 font-serif font-semibold italic">
-                  <span className="text-yellow-300">*</span> {text}
-                </div>
-                {i !== 2 &&
-                  <div className="my-2 border"></div>
-                }
-              </section>
-            ))}
+            <section className="m-2">
+              <div className="text-sm text-white/80 font-serif font-semibold italic">
+                <span className="not-italic font-normal">Union soldiers milling about, 1861.</span>  The featureless white structure is where the enslaved were held, as they awaited shipment away from everything they had ever known and to the horrific realities of the cotton South.
+              </div>
+            </section>
           </ScrollArea>
         </PopoverContent>
       </Popover>
