@@ -3,9 +3,9 @@
 
 const HomePageText = () => {
   return (
-    <div className="mb-8 h-auto w-full flex justify-center items-center font-sans">
-      <p className="w-[90%]">
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab repellendus consequuntur minima rerum eligendi! Dolorem consequatur culpa exercitationem, distinctio error reprehenderit voluptate dignissimos est voluptas amet sint assumenda repellat ratione!
+    <div className="mb-8 h-auto w-full flex justify-center items-center font-serif font-semibold italic">
+      <p className="w-[90%] text-sm sm:text-base md:text-lg">
+        The Brig Uncas was one of three ships that Alexandria, VA based domestic slave trading firm, Franklin & Armfeld, used to transport enslaved humans from the Upper South, mainly Virginia and Maryland, to the Port of New Orleans.  There, the enslaved would be bought, resold, mortgaged, etc., and disburded throughout the Lower South according the the owner&apos;s dictate.
       </p>
     </div>
   )

@@ -1,17 +1,18 @@
-import {
-  Popover,
-  PopoverContent,
-  PopoverTrigger,
-} from "@/components/ui/popover";
-import { cn } from "@/lib/utils";
-import houseOne from '@/public/house-1.png';
-import houseTwo from '@/public/house-2.png';
-import houseThree from '@/public/house-3.png';
-import Image from "next/image";
-import { ScrollArea } from "@/components/ui/scroll-area";
-import { frontpageText } from "@/constants/captiveArray";
+// import {
+//   Popover,
+//   PopoverContent,
+//   PopoverTrigger,
+// } from "@/components/ui/popover";
+// import { cn } from "@/lib/utils";
+// import houseOne from '@/public/house-1.png';
+// import houseTwo from '@/public/house-2.png';
+// import houseThree from '@/public/house-3.png';
+// import Image from "next/image";
+// import { ScrollArea } from "@/components/ui/scroll-area";
+// import { frontpageText } from "@/constants/captiveArray";
 import HomePageText from "@/components/display/HomePageText";
 import DesktopHome from "@/components/display/DesktopHome";
+import MobileHome from "@/components/display/MobileHome";
 
 
 export default function Home() {
@@ -20,6 +21,7 @@ export default function Home() {
     <div className="w-full h-full mt-8 flex flex-col justify-center items-center text-lg font-serif gap-6">
       <HomePageText />
       <DesktopHome />
+      <MobileHome />
       {/* <div className="capitalize hidden sm:flex w-full h-full mt-0 flex-col justify-center items-center text-lg font-serif gap-6">
         <div className="container flex flex-row justify-around items-center">
           <Image
@@ -63,7 +65,7 @@ export default function Home() {
       </div> */}
 
 
-      <div className="sm:hidden w-full h-full flex flex-col justify-center items-center text-lg font-serif gap-6">
+      {/* <div className="sm:hidden w-full h-full flex flex-col justify-center items-center text-lg font-serif gap-6">
         <Popover>
           <PopoverTrigger>
             <Image
@@ -142,7 +144,7 @@ export default function Home() {
             </ScrollArea>
           </PopoverContent>
         </Popover>
-      </div>
+      </div> */}
     </div>
   );
 };

@@ -17,7 +17,7 @@ const Navbar = () => {
         <nav className="flex gap-6">
           {links.map((link, i) => {
             return (
-              <Link key={i} href={link.path} className={`${link.path === pathName && " text-lg text-yellow-300 no-underline font-extrabold font-serif uppercase"} text-white text-sm font-light font-serif`}>{link.name}</Link>
+              <Link key={i} href={link.path} className={`${link.path === pathName && " text-lg text-yellow-300 no-underline font-extrabold font-serif uppercase"} text-white text-base font-light font-serif`}>{link.name}</Link>
             )
           })}
         </nav>
