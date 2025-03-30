@@ -1,5 +1,7 @@
+import { externalSources } from "@/constants/captiveArray";
 import Link from "next/link";
 import { FaCopyright } from "react-icons/fa";
+import { TbSlashes } from "react-icons/tb";
 
 const Footer = () => {
 
@@ -17,11 +19,17 @@ const Footer = () => {
             <p className="text-xs text-white">{year}</p>
             <p className="text-xs text-white">McCray Austin</p>
           </div>
-          <div className="w-[200px] text-center">
-            <p>
-              Something Goes Here
-            </p>
-          </div>
+          <nav className="flex gap-2">
+            {
+              externalSources.map((address, i) => {
+                return (
+                  <Link key={i} href={address.path} target="_blank">
+                    <TbSlashes />
+                  </Link>
+                )
+              })
+            }
+          </nav>
         </div>
       </div>
     </footer>
