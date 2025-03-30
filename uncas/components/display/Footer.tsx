@@ -13,19 +13,19 @@ const Footer = () => {
         <div className="w-full flex flex-col gap-2 sm:gap-0 sm:flex-row sm:justify-between items-center">
         {/* <div className="w-full flex flex-row justify-between items-center"> */}
           <div className="">
-            <Link href={'/'} className="text-xs text-yellow-300 font-extrabold font-serif uppercase text-white" >Brig Uncas</Link>
+            <Link href={'/'} className="text-base text-yellow-300 font-extrabold font-serif uppercase text-white" >Brig Uncas</Link>
           </div>
           <div className="w-[200px] flex flex-row justify-center items-center gap-2 ">
             <FaCopyright className="rounded-lg w-4 h-4 text-white/70" />
-            <p className="text-xs text-white">{year}</p>
-            <p className="text-xs text-white">McCray Austin</p>
+            <p className="text-base text-white">{year}</p>
+            <p className="text-base text-white">McCray Austin</p>
           </div>
           <nav className="flex gap-2">
             {
               externalSources.map((address, i) => {
                 return (
-                  <Link key={i} href={address.path} target="_blank">
-                    <TbSlashes />
+                  <Link key={i} href={address.path} target="_blank" >
+                    <TbSlashes className="text-xl"/>
                   </Link>
                 )
               })
