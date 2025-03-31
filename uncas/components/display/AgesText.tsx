@@ -3,9 +3,9 @@
 
 const AgesText = () => {
   return (
-    <div>
-      Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis fuga delectus possimus, autem suscipit nulla doloremque maiores laudantium tenetur rerum totam a dicta aspernatur vitae obcaecati eligendi rem facilis sint?
-    </div>
+    <p className="w-[90%] text-sm sm:text-base md:text-lg font-serif font-semibold italic">
+      There were eight additional unnamed, enslaved childred who were transported to New Orleans on this shipment of people.  The total enslaved transported was 100, not 92.
+    </p>
   )
 }
 export default AgesText;
