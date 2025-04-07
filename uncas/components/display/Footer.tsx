@@ -38,8 +38,8 @@ const Footer = () => {
                           <GiSail className="text-xl hover:text-yellow-300" />
                         </Link>
                       </TooltipTrigger>
-                      <TooltipContent>
-                        <p>Add to library</p>
+                      <TooltipContent side="left">
+                        <p>{address.source}</p>
                       </TooltipContent>
                     </Tooltip>
                   </TooltipProvider>
