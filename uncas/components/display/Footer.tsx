@@ -1,7 +1,7 @@
 import { externalSources } from "@/constants/captiveArray";
 import Link from "next/link";
 import { FaCopyright } from "react-icons/fa";
-import { TbSlashes } from "react-icons/tb";
+import { GiSail } from "react-icons/gi";
 
 const Footer = () => {
 
@@ -20,12 +20,13 @@ const Footer = () => {
             <p className="text-base text-white">{year}</p>
             <p className="text-base text-white">McCray Austin</p>
           </div>
-          <nav className="flex gap-2">
+          <nav className="flex flex-row justify-center items-end gap-2">
+            <span className="text-xs font-serif text-yellow-300 uppercase">sources:</span>
             {
               externalSources.map((address, i) => {
                 return (
                   <Link key={i} href={address.path} target="_blank" >
-                    <TbSlashes className="text-xl"/>
+                    <GiSail className="text-xl hover:text-yellow-300"/>
                   </Link>
                 )
               })
