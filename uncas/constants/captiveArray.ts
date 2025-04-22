@@ -148,7 +148,7 @@ export const links = [
 export const externalSources = [
   { path: 'https://encyclopediavirginia.org/entries/franklin-and-armfield/', source: 'Encyclopedia Virginia' },
   { path: 'https://transcription.si.edu/project/27042', source: 'The Smithsonian'  },
-  { path: 'https://afrigeneas.org/slavedata/manifests.html', source: 'Inward Slave Manifests' }
+  { path: 'https://afrigeneas.org/slavedata/manifests.html', source: 'Slave Manifests' }
 ]
 
 export const backpageText = [
