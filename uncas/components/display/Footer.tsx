@@ -2,12 +2,12 @@ import { externalSources } from "@/constants/captiveArray";
 import Link from "next/link";
 import { FaCopyright } from "react-icons/fa";
 import { GiSail } from "react-icons/gi";
-import {
-  Tooltip,
-  TooltipContent,
-  TooltipProvider,
-  TooltipTrigger,
-} from "@/components/ui/tooltip";
+// import {
+//   Tooltip,
+//   TooltipContent,
+//   TooltipProvider,
+//   TooltipTrigger,
+// } from "@/components/ui/tooltip";
 
 const Footer = () => {
 
@@ -31,18 +31,23 @@ const Footer = () => {
             {
               externalSources.map((address, i) => {
                 return (
-                  <TooltipProvider key={i}>
-                    <Tooltip>
-                      <TooltipTrigger asChild>
-                        <Link key={i} href={address.path} target="_blank" >
-                          <GiSail className="text-xl hover:text-yellow-300" />
-                        </Link>
-                      </TooltipTrigger>
-                      <TooltipContent side="left">
-                        <p>{address.source}</p>
-                      </TooltipContent>
-                    </Tooltip>
-                  </TooltipProvider>
+                  <figure key={i} >
+                    <Link key={i} href={address.path} target="_blank" >
+                      <GiSail className="text-xl hover:text-yellow-300" />
+                    </Link>
+                  </figure>
+                  // <TooltipProvider key={i}>
+                  //   <Tooltip>
+                  //     <TooltipTrigger asChild>
+                  //       <Link key={i} href={address.path} target="_blank" >
+                  //         <GiSail className="text-xl hover:text-yellow-300" />
+                  //       </Link>
+                  //     </TooltipTrigger>
+                  //     <TooltipContent side="left">
+                  //       <p>{address.source}</p>
+                  //     </TooltipContent>
+                  //   </Tooltip>
+                  // </TooltipProvider>
                 )
               })
             }
